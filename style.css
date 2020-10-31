@@ -4,5 +4,93 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 10px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+li,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+button {
+  background: #4c6e97;
+  font-size: 1.8rem;
+  color: white;
+  padding: 2rem 6rem;
+  border: none;
+  cursor: pointer;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  background-color: #131c27;
+  color: white;
+  text-decoration: none;
+}
+header > nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header > nav > h1 {
+  padding: 2rem;
+  width: 50%;
+  font-family: "Pattaya", sans-serif;
+  font-weight: regular;
+}
+header > nav > ul {
+  display: flex;
+  width: 50%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.home {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("/assets/images/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home > p {
+  padding: 5vh;
+  font-weight: normal;
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 45%;
+  }
+  header > nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header > nav > h1 {
+    padding: 2rem;
+    text-align: center;
+  }
+  header > nav > ul > li {
+    padding: 0 2rem 2rem;
+  }
 }
