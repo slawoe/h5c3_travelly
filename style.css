@@ -62,7 +62,7 @@ header > nav > ul {
 .home {
   min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url("/assets/images/landing-page.jpg");
+    url("./assets/images/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
