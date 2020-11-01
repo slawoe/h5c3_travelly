@@ -114,6 +114,7 @@ header > nav > ul {
   padding: 2vh 0;
   background: linear-gradient(#131c27, #663b34);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -188,7 +189,57 @@ header > nav > ul {
   justify-content: center;
 }
 
-@media screen and (max-width: 500px) {
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("./assets/images/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact > form {
+  background: rgba(19, 28, 29, 0.8);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+#contact > form > div:first-child {
+  text-align: center;
+  padding: 4rem;
+}
+#contact > form > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+#contact > form > div:nth-child(2) > label {
+  display: flex;
+  justify-content: space-between;
+}
+#contact > form > div:nth-child(2) > label > span {
+  margin: 3rem;
+}
+#contact > form > div:nth-child(2) > label > input {
+  padding: 0.5rem;
+  margin: 2.5rem;
+  outline: none;
+}
+#contact > form > button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 932px) {
   html {
     font-size: 45%;
   }
