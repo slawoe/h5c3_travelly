@@ -14,7 +14,7 @@
 <body>
    <header>
        <nav>
-           <h1>Travelly</h1>
+        <a href="#home"><h1>Travelly</h1></a>
            <ul>
                <li><a href="#locations">Locations</a></li>
                <li><a href="#benefits">Benefits</a></li>
@@ -23,19 +23,48 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home">
             <h2>Travel Beyond Limits.</h2>
             <p>Start your travel at an affordable price with Travelly.<br/> Contact us now below.</p>
             <button>Book now</button>
         </section>
         <section id="locations">
             <div>
-            <h2>The Perfect Travelling Expierience.</h2>
-            <p>We cover everything from picking the prefect hotel, flight and travelling destination.</p>
+                <h2>The Perfect Travelling Expierience.</h2>
+                <p>We cover everything from picking the prefect hotel, flight and travelling destination.</p>
             </div>
             <img src="./assets/images/cloud.png" class="cloud" alt="Clouds"/>
             <img src="./assets/images/cloud.png" class="cloud cloud-background" alt="Clouds"/>
         </section>
+        <section id="benefits">
+            <div>
+                <h2>The Perfect Travel</h2>
+                <p>We cover everything from picking the prefect hotel, flight and travelling destination.</p>
+            </div>
+        </section>
+        <div class="cards">
+            <div class="card">
+                <div class="card--icon-wrapper">
+                    <img src="./assets/icons/route-solid.svg" alt="Map route" />
+                </div>
+                <h3>Travel</h3>
+                <p>Travel in over 250 countires with no effort.</p>
+            </div>
+            <div class="card">
+                <div class="card--icon-wrapper">
+                    <img src="./assets/icons/bed-solid.svg" alt="Hotel" />
+                </div>
+                <h3>Hotel</h3>
+                <p>Hotels located near popular areas.</p>
+            </div>
+            <div class="card">
+                <div class="card--icon-wrapper">
+                    <img src="./assets/icons/plane-departure-solid.svg" alt="Starting plane" />
+                </div>
+                <h3>Flight</h3>
+                <p>Flight included in every purchased trip.</p>
+            </div>
+        </div>
    </main>
    <footer></footer> 
 </body>
