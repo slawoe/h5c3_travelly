@@ -14,7 +14,8 @@ h3,
 li,
 label,
 input,
-p {
+p,
+span {
   font-size: 2rem;
 }
 h2 {
@@ -36,6 +37,9 @@ a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+}
+ul {
+  list-style: none;
 }
 
 header {
@@ -65,7 +69,6 @@ header > nav > a > h1 {
 header > nav > ul {
   display: flex;
   width: 50%;
-  list-style: none;
   justify-content: space-around;
   align-items: center;
 }
@@ -239,6 +242,30 @@ header > nav > ul {
   border-bottom-right-radius: 20px;
 }
 
+footer {
+  color: white;
+  background: #131c27;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer > span {
+  padding: 3rem;
+  width: 50%;
+}
+footer > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 3rem;
+}
+footer > ul > li > a > img {
+  width: 3rem;
+}
+
 @media screen and (max-width: 932px) {
   html {
     font-size: 45%;
@@ -263,5 +290,10 @@ header > nav > ul {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
     padding: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact > form {
+    width: 100%;
   }
 }
